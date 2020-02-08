@@ -77,7 +77,7 @@ def gross_per_studio(collection)
       gross = collection[index][:worldwide_gross]
     if !total_worldwide_gross[studio]
       total_worldwide_gross[studio] = gross
-    else
+    else total_worldwide_gross[studio]
       total_worldwide_gross[gross] += gross
     end
     index += 1
